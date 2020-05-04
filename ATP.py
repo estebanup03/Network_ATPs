@@ -15,9 +15,9 @@ timestr = time.strftime("%Y%m%d_%H%M%S")
 Device = input("Ingrese vendor de equipo:\n1. Cisco\n2. Juniper\n")
 IP = input("Ingrese la IP del equipo: ")
 
-#IP = "10.215.222.55"
-user = "sid-ip"
-password = "sid-cw-bus1n3ss"
+#IP = "IP"
+user = "user"
+password = "password"
 #password = getpass.getpass()
 
 juniper_junos = {
@@ -109,9 +109,3 @@ else:
         print("*" * 64, file=log)
         print(" ", file=log)
     commands.close()
-
-
-
-
-
-
