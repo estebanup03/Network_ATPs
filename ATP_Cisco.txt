@@ -1,0 +1,14 @@
+terminal length 0
+show version
+show running-config
+show environment all
+show ip route
+show ip route vrf *
+show ip arp
+show interfaces
+show interfaces | inc error
+show interfaces description
+ping vrf CPE-MGT 10.255.250.164 repeat 10
+ping vrf CPE-MGT 10.255.250.166 repeat 10
+ping vrf CPE-MGT 172.18.11.236 repeat 10
+ping 10.15.2.19 repeat 2000

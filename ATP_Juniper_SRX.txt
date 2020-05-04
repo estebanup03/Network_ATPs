@@ -1,0 +1,19 @@
+set cli screen-length 0
+show system snapshot media internal 
+show chassis hardware
+show interfaces descriptions 
+show arp no-resolve
+show interfaces terse
+show interfaces ge-0/0/0 detail extensive
+show interfaces ge-0/0/1 detail extensive
+show configuration routing-instances 
+show route table CPE-MGT.inet.0 
+show route
+show interfaces descriptions
+show arp no-resolve 
+ping routing-instance CPE-MGT 10.255.250.164 rapid count 10
+ping routing-instance CPE-MGT 10.255.250.166 rapid count 10
+ping routing-instance CPE-MGT 172.18.11.236 rapid count 10
+ping 10.188.33.174 rapid count 1000
+show configuration | display set | match neigh
+show bgp summary

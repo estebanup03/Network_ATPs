@@ -1,0 +1,20 @@
+set cli screen-length 0
+show system snapshot media internal 
+show interfaces descriptions 
+show arp no-resolve
+show interfaces terse
+show interfaces ge-0/0/0 detail extensive | match error
+show configuration routing-instances 
+show route table CPE-MGT.inet.0 
+ping 10.255.250.164 rapid count 10
+ping 10.255.250.166 rapid count 10
+ping 172.18.11.236 rapid count 10
+show route
+show interfaces descriptions
+show arp no-resolve 
+show interfaces detail extensive | match error
+show virtual-chassis
+show virtual-chassis vc-port
+show vlans
+show ethernet-switching table
+show spanning-tree bridge
